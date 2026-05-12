@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="engineering-whiteprint">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>计算机视觉 + RAG/LLM 工程作品集 | 陈陆琪</title>
+  <meta name="description" content="面向算法、LLM 与机器学习工程岗位的静态 HTML 中文作品集。">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/themes/engineering-whiteprint.css" id="theme-link">
+  <link rel="stylesheet" href="assets/portfolio.css">
+  <script src="assets/runtime.js" defer></script>
+</head>
+<body>
+  <main class="deck" aria-label="计算机视觉与 RAG LLM 工程作品集">
+    <div class="deck-header">
+      <span>陈陆琪</span>
+      <span>算法 / LLM 与机器学习工程作品集</span>
+    </div>
+    <div class="deck-footer">
+      <span>计算机视觉 + RAG/LLM 工程作品集</span>
+      <span class="slide-number" aria-live="polite"></span>
+    </div>
+    <nav class="nav-controls" aria-label="幻灯片导航">
+      <button class="nav-button nav-prev" type="button" data-nav="prev" aria-label="上一页" hidden>&larr; 上一页</button>
+      <button class="nav-button nav-start" type="button" data-nav="start" aria-label="回到第一页" hidden>回到开头</button>
+      <button class="nav-button nav-next" type="button" data-nav="next" aria-label="下一页">下一页 &rarr;</button>
+    </nav>
+    <div class="progress-bar" aria-hidden="true"><span></span></div>
+
+    <section class="slide is-active" data-title="封面">
+      <a class="language-switch" href="https://920961270.github.io/portfolio/" aria-label="切换到英文版作品集">English Version &rarr;</a>
+      <div class="cover-grid">
+        <div class="cover-panel stack">
+          <p class="kicker">算法 / LLM 与机器学习工程作品集</p>
+          <h1 class="title">计算机视觉 + RAG/LLM 工程作品集</h1>
+          <p class="lede">从振动退化视频复原到有依据的工程报告生成</p>
+          <div class="cover-meta">
+            <strong>陈陆琪</strong>
+            <span>机器学习 / 算法工程实习候选人</span>
+            <a class="source-link" href="https://github.com/920961270">github.com/920961270</a>
+          </div>
+        </div>
+        <div class="signal-board">
+          <div class="signal accent-cv">
+            <div>
+              <h3>计算机视觉</h3>
+              <p class="dim">面向振动退化监控视频的轻量级视频复原。</p>
+            </div>
+          </div>
+          <div class="signal accent-rag">
+            <div>
+              <h3>RAG / LLM</h3>
+              <p class="dim">本地检索与可选 LLM 分析，用于生成有依据的报告。</p>
+            </div>
+          </div>
+          <div class="signal accent-eng">
+            <div>
+              <h3>工程流程</h3>
+              <p class="dim">CLI 流程、可复用指标、文档整理与 GitHub 项目打包。</p>
+            </div>
+          </div>
+        </div>
+        <p class="browse-hint">使用 &larr; / &rarr; 键，或点击导航按钮浏览。</p>
+      </div>
+      <aside class="notes">开场强调主线：作品集连接视频复原模型、可衡量评估和有依据的工程报告。</aside>
+    </section>
+
+    <section class="slide" data-title="候选人概览">
+      <div class="stack">
+        <p class="kicker">候选人概览</p>
+        <h2 class="title">把 AI 模型输出转化为工程判断</h2>
+      </div>
+      <div class="grid g4">
+        <div class="card snapshot-card accent-card accent-cv">
+          <h3>背景</h3>
+          <p>硕士研究生 &middot; 计算机视觉与智能航运方向</p>
+        </div>
+        <div class="card snapshot-card accent-card accent-eng">
+          <h3>核心技术栈</h3>
+          <p>Python &middot; PyTorch &middot; OpenCV &middot; YOLO &middot; FAISS &middot; SentenceTransformers</p>
+        </div>
+        <div class="card snapshot-card accent-card accent-rag">
+          <h3>主要项目</h3>
+          <p>VSRNet &middot; VSRNet Engineering Assistant</p>
+        </div>
+        <div class="card snapshot-card accent-card accent-metric">
+          <h3>岗位匹配</h3>
+          <p>算法工程 &middot; RAG/LLM &middot; 工业 AI</p>
+        </div>
+      </div>
+      <p class="quote-line">我关注实用型 AI 流程：让模型输出能够服务于可衡量、可解释的工程决策。</p>
+    </section>
+
+    <section class="slide" data-title="岗位关键词映射">
+      <div class="stack">
+        <p class="kicker">岗位关键词映射</p>
+        <h2 class="title">将岗位关键词对应到项目证据</h2>
+      </div>
+      <table class="mapping-table" aria-label="岗位关键词映射">
+        <thead>
+          <tr>
+            <th>岗位关键词</th>
+            <th>作品集证据</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>LLM / RAG</td><td>本地 RAG + 可选 LLM 报告生成</td></tr>
+          <tr><td>文档摄取</td><td>VSRNet 方法说明与评估文档整理</td></tr>
+          <tr><td>向量嵌入 / 索引</td><td>SentenceTransformers + FAISS</td></tr>
+          <tr><td>检索</td><td>Top-k 项目上下文检索</td></tr>
+          <tr><td>计算机视觉</td><td>VSRNet 视频复原</td></tr>
+          <tr><td>目标检测</td><td>YOLOv8n 下游评估</td></tr>
+          <tr><td>评估</td><td>PSNR、SSIM、抖动、IoU 连续性、置信度方差</td></tr>
+          <tr><td>工程流程</td><td>CLI 流程、复用模式、GitHub 项目包装</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="slide" data-title="项目路线">
+      <div class="stack">
+        <p class="kicker">项目路线</p>
+        <h2 class="title">从视频复原研究到工程辅助系统</h2>
+      </div>
+      <div class="roadmap">
+        <div class="card road-card accent-card accent-cv">
+          <span class="road-num">1</span>
+          <h3>VSRNet 研究</h3>
+          <p class="dim">面向振动退化视频复原的轻量级模型。</p>
+        </div>
+        <div class="road-arrow" aria-hidden="true"></div>
+        <div class="card road-card accent-card accent-metric">
+          <span class="road-num">2</span>
+          <h3>感知导向评估</h3>
+          <p class="dim">重建质量、时序稳定性与下游检测一致性。</p>
+        </div>
+        <div class="road-arrow" aria-hidden="true"></div>
+        <div class="card road-card accent-card accent-rag">
+          <span class="road-num">3</span>
+          <h3>VSRNet 工程助手</h3>
+          <p class="dim">CV 指标 + RAG 检索 + 经过校验的可选 LLM 报告。</p>
+        </div>
+      </div>
+      <p class="callout">这条路线从轻量级视频复原模型出发，逐步扩展到结合 CV 指标、RAG 检索和可验证报告生成的工程辅助流程。</p>
+    </section>
+
+    <section class="slide" data-title="VSRNet 问题">
+      <div class="stack">
+        <p class="kicker">VSRNet 问题</p>
+        <h2 class="title">为什么关注振动退化视频复原？</h2>
+      </div>
+      <div class="problem-layout">
+        <div class="card accent-card accent-cv stack">
+          <h3>问题</h3>
+          <p class="lede">振动会在监控视频中造成模糊、局部形变和帧间不稳定。</p>
+        </div>
+        <div class="card accent-card accent-metric stack">
+          <h3>挑战</h3>
+          <p class="lede">画面更清晰并不够。工业视觉系统还需要时序稳定性和可靠的下游感知结果。</p>
+        </div>
+      </div>
+      <div class="card card-outline stack">
+        <h3>我的关注点：从三个视角评估复原效果</h3>
+        <div class="focus-list">
+          <div class="focus-item" style="--item-color: var(--accent)">重建保真度</div>
+          <div class="focus-item" style="--item-color: var(--metric)">运动稳定性</div>
+          <div class="focus-item" style="--item-color: var(--accent-3)">下游检测一致性</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide" data-title="VSRNet 方法">
+      <div class="stack">
+        <p class="kicker">VSRNet 方法</p>
+        <h2 class="title">轻量级时空视频复原流程</h2>
+      </div>
+      <div class="pipeline">
+        <div class="stage" style="--stage-color: var(--accent)">
+          <span class="stage-icon">5F</span>
+          <h3>5 帧输入窗口</h3>
+        </div>
+        <div class="stage" style="--stage-color: var(--accent)">
+          <span class="stage-icon">3D</span>
+          <h3>3D 时空特征提取</h3>
+        </div>
+        <div class="stage" style="--stage-color: var(--good)">
+          <span class="stage-icon">AVG</span>
+          <h3>时间均值融合</h3>
+        </div>
+        <div class="stage" style="--stage-color: var(--metric)">
+          <span class="stage-icon">RES</span>
+          <h3>残差细化</h3>
+        </div>
+        <div class="stage" style="--stage-color: var(--accent-3)">
+          <span class="stage-icon">OUT</span>
+          <h3>复原中心帧</h3>
+        </div>
+      </div>
+      <div class="method-notes">
+        <span class="pill">轻量级</span>
+        <span class="pill">无需显式对齐</span>
+        <span class="pill">不依赖光流</span>
+        <span class="pill">不使用可变形对齐</span>
+        <span class="pill">面向振动退化场景设计</span>
+      </div>
+    </section>
+
+    <section class="slide" data-title="VSRNet 视觉结果">
+      <div class="stack">
+        <p class="kicker">VSRNet 视觉结果</p>
+        <h2 class="title">低、中、高振动强度对比</h2>
+      </div>
+      <div class="stepped-gif-layout" aria-label="低到高振动强度视觉对比">
+        <div class="progression-line" aria-hidden="true">低 &rarr; 中 &rarr; 高</div>
+        <figure class="card gif-card step-card step-low accent-card accent-cv">
+          <span class="gif-badge">低振动</span>
+          <button class="gif-frame gif-zoom-trigger" type="button" data-left-label="振动" data-right-label="复原" data-zoom-src="gifs/low_compare.gif" data-zoom-title="低振动：振动输入经 VSRNet 复原" aria-label="放大查看低振动对比">
+            <img src="gifs/low_compare.gif" alt="低振动对比">
+            <span class="model-arrow">VSRNet &rarr;</span>
+            <span class="zoom-hint">点击放大</span>
+          </button>
+          <figcaption>低振动对比</figcaption>
+        </figure>
+        <figure class="card gif-card step-card step-mid accent-card accent-metric">
+          <span class="gif-badge">中振动</span>
+          <button class="gif-frame gif-zoom-trigger" type="button" data-left-label="振动" data-right-label="复原" data-zoom-src="gifs/mid_compare.gif" data-zoom-title="中振动：振动输入经 VSRNet 复原" aria-label="放大查看中振动对比">
+            <img src="gifs/mid_compare.gif" alt="中振动对比">
+            <span class="model-arrow">VSRNet &rarr;</span>
+            <span class="zoom-hint">点击放大</span>
+          </button>
+          <figcaption>中振动对比</figcaption>
+        </figure>
+        <figure class="card gif-card step-card step-high accent-card accent-rag">
+          <span class="gif-badge">高振动</span>
+          <button class="gif-frame gif-zoom-trigger" type="button" data-left-label="振动" data-right-label="复原" data-zoom-src="gifs/high_compare.gif" data-zoom-title="高振动：振动输入经 VSRNet 复原" aria-label="放大查看高振动对比">
+            <img src="gifs/high_compare.gif" alt="高振动对比">
+            <span class="model-arrow">VSRNet &rarr;</span>
+            <span class="zoom-hint">点击放大</span>
+          </button>
+          <figcaption>高振动对比</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="slide" data-title="VSRNet 定量结果">
+      <div class="stack">
+        <p class="kicker">VSRNet 定量结果</p>
+        <h2 class="title">评估不仅关注图像清晰度</h2>
+      </div>
+      <div class="metric-grid">
+        <div class="card metric-card accent-card accent-metric">
+          <span class="metric-label">低振动 PSNR / SSIM</span>
+          <strong class="metric-value">18.897 / 0.6839</strong>
+          <span class="metric-sub">重建保真度</span>
+        </div>
+        <div class="card metric-card accent-card accent-metric">
+          <span class="metric-label">中振动 PSNR / SSIM</span>
+          <strong class="metric-value">19.039 / 0.6810</strong>
+          <span class="metric-sub">重建保真度</span>
+        </div>
+        <div class="card metric-card accent-card accent-metric">
+          <span class="metric-label">高振动 PSNR / SSIM</span>
+          <strong class="metric-value">18.971 / 0.6554</strong>
+          <span class="metric-sub">重建保真度</span>
+        </div>
+        <div class="card metric-card accent-card accent-rag">
+          <span class="metric-label">高振动检测结果</span>
+          <strong class="metric-value">0.9052 &rarr; 0.9465</strong>
+          <span class="metric-sub">IoU 连续性提升</span>
+        </div>
+        <div class="card metric-card accent-card accent-rag">
+          <span class="metric-label">置信度方差</span>
+          <strong class="metric-value">0.005598</strong>
+          <span class="metric-sub">检测一致性指标</span>
+        </div>
+        <div class="card metric-card accent-card accent-cv">
+          <span class="metric-label">运动稳定性</span>
+          <strong class="metric-value">41.407 / 98.301</strong>
+          <span class="metric-sub">抖动 / 二阶平滑度</span>
+        </div>
+      </div>
+      <p class="callout">评估把复原质量、运动稳定性和下游感知一致性连接在一起。</p>
+    </section>
+
+    <section class="slide" data-title="工程助手系统概览">
+      <div class="stack">
+        <p class="kicker">VSRNet 工程助手</p>
+        <h2 class="title">系统概览：从视频到有依据的报告</h2>
+      </div>
+      <div class="pipeline long">
+        <div class="stage" style="--stage-color: var(--accent)">
+          <span class="stage-icon">IN</span>
+          <h3>输入视频</h3>
+        </div>
+        <div class="stage" style="--stage-color: var(--accent)">
+          <span class="stage-icon">VSR</span>
+          <h3>VSRNet 复原</h3>
+        </div>
+        <div class="stage" style="--stage-color: var(--good)">
+          <span class="stage-icon">YOLO</span>
+          <h3>YOLO 检测 / 跟踪</h3>
+        </div>
+        <div class="stage" style="--stage-color: var(--metric)">
+          <span class="stage-icon">M</span>
+          <h3>指标计算</h3>
+        </div>
+        <div class="stage" style="--stage-color: var(--accent-3)">
+          <span class="stage-icon">RAG</span>
+          <h3>本地 RAG 检索</h3>
+        </div>
+        <div class="stage" style="--stage-color: #a16207">
+          <span class="stage-icon">RULE</span>
+          <h3>规则分析</h3>
+        </div>
+        <div class="stage" style="--stage-color: var(--accent-3)">
+          <span class="stage-icon">MD</span>
+          <h3>可选 LLM + Markdown 报告</h3>
+        </div>
+      </div>
+      <p class="callout">工程助手把 CV 模型输出转化为有依据、可复用、可解释的工程报告。</p>
+    </section>
+
+    <section class="slide" data-title="RAG + LLM 设计与工程经验">
+      <div class="stack">
+        <p class="kicker">RAG + LLM 设计</p>
+        <h2 class="title">用保守工程控制实现有依据的报告生成</h2>
+      </div>
+      <div class="split">
+        <div class="card accent-card accent-rag stack">
+          <h3>RAG + LLM 设计</h3>
+          <div class="design-list">
+            <div class="design-row" style="--card-accent: var(--accent)">
+              <strong>知识层</strong>
+              <span class="dim">VSRNet 文档、方法笔记、评估说明</span>
+            </div>
+            <div class="design-row" style="--card-accent: var(--accent-3)">
+              <strong>检索层</strong>
+              <span class="dim">SentenceTransformers 嵌入 + FAISS 索引 + top-k 检索</span>
+            </div>
+            <div class="design-row" style="--card-accent: var(--metric)">
+              <strong>报告层</strong>
+              <span class="dim">规则化指标解释 + 可选 LLM 补充分析</span>
+            </div>
+          </div>
+        </div>
+        <div class="card accent-card accent-eng stack">
+          <h3>工程经验</h3>
+          <div class="lesson-list">
+            <div class="lesson"><strong>路径鲁棒性</strong><span class="dim">子进程推理使用明确路径，减少运行环境差异。</span></div>
+            <div class="lesson"><strong>复用模式</strong><span class="dim">跳过耗时阶段，快速重新生成报告。</span></div>
+            <div class="lesson"><strong>指标可靠性</strong><span class="dim">区分数据不可用和逻辑未实现。</span></div>
+            <div class="lesson"><strong>LLM 安全性</strong><span class="dim">保存原始输出，清理风险表述，校验最终文本。</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="callout">规则分析是事实来源。LLM 输出只作为可选补充，并通过清理与校验减少无依据表述。</p>
+    </section>
+
+    <section class="slide" data-title="当前 Demo 指标与下一步">
+      <div class="stack">
+        <p class="kicker">当前 Demo 指标 + 下一步</p>
+        <h2 class="title">向可靠工程流程推进</h2>
+      </div>
+      <div class="split">
+        <div class="card accent-card accent-metric stack">
+          <h3>当前 Demo 指标</h3>
+          <div class="demo-metrics">
+            <div class="demo-metric"><span>PSNR</span><strong>19.389 dB</strong></div>
+            <div class="demo-metric"><span>SSIM</span><strong>0.699</strong></div>
+            <div class="demo-metric"><span>抖动</span><strong>1.57 px</strong></div>
+            <div class="demo-metric"><span>IoU 连续性</span><strong>0.92</strong></div>
+            <div class="demo-metric"><span>平均置信度</span><strong>0.28</strong></div>
+            <div class="demo-metric"><span>检测数量</span><strong>106 / 84 帧</strong></div>
+            <div class="demo-metric"><span>推理时间</span><strong>1100.92 ms/frame</strong></div>
+          </div>
+          <p class="callout warning">该结果不是实时性能。当前运行时间说明后续仍需要优化。</p>
+        </div>
+        <div class="card accent-card accent-eng stack">
+          <h3>下一步</h3>
+          <div class="next-list">
+            <div class="next-item" style="--card-accent: var(--accent)"><strong>Docker 化环境</strong></div>
+            <div class="next-item" style="--card-accent: var(--metric)"><strong>低 / 中 / 高振动批量评估</strong></div>
+            <div class="next-item" style="--card-accent: var(--accent-3)"><strong>Agent 式流程编排</strong></div>
+            <div class="next-item" style="--card-accent: var(--good)"><strong>可视化 Dashboard</strong></div>
+            <div class="next-item" style="--card-accent: #a16207"><strong>GitHub Pages 部署</strong></div>
+          </div>
+          <p class="closing">目标：把研究原型转化为可靠的工程工作流。</p>
+          <p class="dim source-link">项目链接：<a href="https://github.com/920961270/VSRNet">VSRNet</a> &middot; <a href="https://github.com/920961270/VSRNet_Engineering_Assistant">VSRNet Engineering Assistant</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="slide closing-slide" data-title="结尾总结">
+      <div class="stack closing-head">
+        <p class="kicker">感谢查看</p>
+        <h2 class="title">结尾总结</h2>
+      </div>
+      <div class="grid g4 closing-card-grid">
+        <div class="card snapshot-card accent-card accent-cv">
+          <h3>计算机视觉基础</h3>
+          <p>视频复原、目标检测、时序稳定性评估。</p>
+        </div>
+        <div class="card snapshot-card accent-card accent-rag">
+          <h3>RAG / LLM 工程意识</h3>
+          <p>本地检索、有依据报告生成、LLM 输出校验。</p>
+        </div>
+        <div class="card snapshot-card accent-card accent-eng">
+          <h3>工程思维</h3>
+          <p>CLI 流程、阶段复用、问题调试、可复现项目包装。</p>
+        </div>
+        <div class="card snapshot-card accent-card accent-metric">
+          <h3>工业 AI 方向</h3>
+          <p>连接模型输出与可衡量的工程决策。</p>
+        </div>
+      </div>
+      <p class="closing final-goal">目标：构建可靠的 AI 系统，把研究模型、工程指标和实际决策连接起来。</p>
+      <div class="closing-links" aria-label="项目链接">
+        <a href="https://github.com/920961270">GitHub</a>
+        <a href="https://github.com/920961270/VSRNet">VSRNet</a>
+        <a href="https://github.com/920961270/VSRNet_Engineering_Assistant">VSRNet Engineering Assistant</a>
+      </div>
+    </section>
+  </main>
+  <div class="media-lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="放大查看 GIF">
+    <div class="media-lightbox-panel">
+      <div class="media-lightbox-header">
+        <strong class="media-lightbox-title">对比查看</strong>
+        <button class="media-lightbox-close" type="button" aria-label="关闭放大图片">关闭</button>
+      </div>
+      <img class="media-lightbox-img" src="" alt="">
+    </div>
+  </div>
+</body>
+</html>

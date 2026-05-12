@@ -1,0 +1,47 @@
+/* Theme: engineering-whiteprint, adapted for a clean HR-facing static deck */
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #edf4fb;
+  --border: rgba(10, 30, 70, 0.18);
+  --border-strong: rgba(10, 30, 70, 0.42);
+  --text-1: #0a1e46;
+  --text-2: #31425f;
+  --text-3: #6d7d96;
+  --accent: #1d4ed8;
+  --accent-2: #0f766e;
+  --accent-3: #7c3aed;
+  --metric: #d97706;
+  --engineering: #facc15;
+  --good: #0f766e;
+  --warn: #d97706;
+  --bad: #dc2626;
+  --radius: 6px;
+  --radius-sm: 4px;
+  --shadow: 0 8px 22px rgba(10, 30, 70, 0.07);
+}
+
+.deck {
+  background:
+    linear-gradient(rgba(10, 30, 70, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(10, 30, 70, 0.045) 1px, transparent 1px),
+    #ffffff;
+  background-size: 40px 40px;
+}
+
+.card {
+  border-color: rgba(10, 30, 70, 0.2);
+}
+
+h1.title,
+h2.title,
+.h1,
+.h2 {
+  color: #0a1e46;
+}
+
+.kicker,
+.eyebrow {
+  color: #1d4ed8;
+}
