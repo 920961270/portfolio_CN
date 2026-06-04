@@ -389,27 +389,84 @@ aside.notes,
 }
 
 @media print {
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+
+  html,
   body {
-    overflow: visible;
+    width: 297mm;
+    min-height: 210mm;
+    margin: 0;
+    background: #ffffff;
+    overflow: visible !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  *,
+  *::before,
+  *::after {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .deck {
+    display: block !important;
+    position: static !important;
+    width: 297mm;
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+  }
+
+  .slide,
+  .slide:not(.is-active) {
+    display: flex !important;
   }
 
   .slide {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    opacity: 1;
+    position: relative !important;
+    inset: auto !important;
+    width: 297mm;
+    height: 210mm;
+    min-height: 210mm;
+    max-height: 210mm;
+    opacity: 1 !important;
+    visibility: visible !important;
     pointer-events: auto;
-    transform: none;
+    transform: none !important;
+    transition: none !important;
     page-break-after: always;
+    break-after: page;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .slide:last-of-type {
+    page-break-after: auto;
+    break-after: auto;
   }
 
   .deck-header,
   .deck-footer,
   .nav-controls,
+  .nav-button,
   .progress-bar,
+  .slide-controls,
   .notes-overlay,
-  .overview {
-    display: none;
+  .overview,
+  .media-lightbox,
+  .print-version-link,
+  .language-switch,
+  .browse-hint,
+  .zoom-hint {
+    display: none !important;
+  }
+
+  .gif-frame {
+    cursor: default;
   }
 }
 

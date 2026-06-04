@@ -267,6 +267,37 @@
       });
     });
 
+    document.querySelectorAll(".project-card img, .image-card img").forEach(function (img) {
+      if (img.closest(".media-lightbox")) return;
+
+      img.classList.add("zoomable-image");
+
+      var card = img.closest(".project-card, .image-card");
+      if (card) card.classList.add("zoomable-card");
+
+      img.setAttribute("role", "button");
+      img.setAttribute("tabindex", "0");
+      if (!img.getAttribute("aria-label")) {
+        img.setAttribute("aria-label", (img.alt || "预览图") + " - 点击放大");
+      }
+
+      function openImagePreview(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        openLightbox(
+          img.getAttribute("data-zoom-src") || img.currentSrc || img.src,
+          img.getAttribute("data-zoom-title") || img.alt || "预览图"
+        );
+      }
+
+      img.addEventListener("click", openImagePreview);
+      img.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+          openImagePreview(event);
+        }
+      });
+    });
+
     if (lightboxClose) {
       lightboxClose.addEventListener("click", function (event) {
         event.stopPropagation();

@@ -1,0 +1,107 @@
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  overflow: visible !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.print-deck {
+  width: 100%;
+}
+
+.print-deck .slide {
+  display: flex !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  position: relative !important;
+  inset: auto !important;
+  width: 297mm;
+  height: 210mm;
+  min-height: 210mm;
+  max-height: 210mm;
+  overflow: hidden;
+  page-break-after: always;
+  break-after: page;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  box-sizing: border-box;
+  pointer-events: auto;
+  transform: none !important;
+  transition: none !important;
+  background:
+    linear-gradient(rgba(29, 78, 216, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(29, 78, 216, 0.035) 1px, transparent 1px),
+    var(--bg);
+  background-size: 40px 40px;
+}
+
+.print-deck .slide:last-child {
+  page-break-after: auto;
+  break-after: auto;
+}
+
+.print-deck .gif-frame,
+.print-deck .step-card {
+  cursor: default;
+}
+
+.print-deck .gif-frame:hover img,
+.print-deck .gif-frame:focus img,
+.print-deck .gif-card:hover .gif-frame img,
+.print-deck .gif-card:focus-within .gif-frame img {
+  transform: none;
+}
+
+.nav-button,
+.progress-bar,
+.slide-controls,
+.click-zone,
+.notes,
+.deck-header,
+.deck-footer,
+.nav-controls,
+.language-switch,
+.browse-hint,
+.zoom-hint,
+.media-lightbox,
+.notes-overlay,
+.overview {
+  display: none !important;
+}
+
+@media screen {
+  body {
+    background: #e5e7eb;
+  }
+
+  .print-deck .slide {
+    margin: 24px auto;
+    box-shadow: 0 8px 28px rgba(15, 23, 42, 0.18);
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+
+  .print-deck .slide {
+    margin: 0;
+    box-shadow: none;
+  }
+}

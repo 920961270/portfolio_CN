@@ -31,6 +31,29 @@
   text-decoration: none;
 }
 
+.print-version-link {
+  position: fixed;
+  top: 46px;
+  right: 32px;
+  z-index: 36;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text-1);
+  box-shadow: var(--shadow);
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.print-version-link:hover,
+.print-version-link:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+  outline: none;
+}
+
 .cover-meta {
   display: grid;
   gap: 10px;
@@ -771,6 +794,13 @@
     font-size: 12px;
   }
 
+  .print-version-link {
+    top: 40px;
+    right: 22px;
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
   .closing-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -875,5 +905,422 @@
     top: 24px;
     padding: 3px 7px;
     font-size: 10px;
+  }
+}
+
+.slide[data-title="技术底座"] {
+  justify-content: flex-start;
+  padding-top: 54px;
+}
+
+.slide[data-title="技术底座"] .stack {
+  gap: 8px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.project-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 16px;
+  min-height: 480px;
+}
+
+.project-copy {
+  display: grid;
+  gap: 10px;
+}
+
+.project-shot,
+.wide-shot,
+.phone-shot {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #eef3f8;
+}
+
+.wide-shot {
+  max-height: 360px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.project-card .wide-shot {
+  align-self: center;
+}
+
+.project-card .phone-shot {
+  justify-self: center;
+  width: auto;
+  max-width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.agent-pipeline {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.workflow-proof {
+  max-width: 860px;
+  justify-self: center;
+  margin: 0 auto;
+}
+
+.workflow-proof .wide-shot {
+  max-height: 220px;
+}
+
+.image-card {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+}
+
+.image-card figcaption {
+  color: var(--text-2);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.screenshot-grid {
+  display: grid;
+  gap: 16px;
+  align-items: stretch;
+}
+
+.screenshot-grid.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.screenshot-grid.phone-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.screenshot-grid.phone-two {
+  width: min(860px, 100%);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  justify-self: center;
+}
+
+.phone-card {
+  justify-items: center;
+}
+
+.phone-card .phone-shot,
+.screenshot-grid .phone-shot {
+  width: auto;
+  max-width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.mode-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.mode-list span {
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent-3);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--text-2);
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.mode-list strong {
+  display: block;
+  color: var(--text-1);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.compact-metrics {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.compact-metrics .metric-card {
+  min-height: 96px;
+}
+
+.compact-metrics .metric-value {
+  font-size: 23px;
+}
+
+.closing-links .pill {
+  border-color: var(--border-strong);
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--text-1);
+}
+
+@media (max-width: 1040px), (max-height: 720px) {
+  .project-card {
+    min-height: 380px;
+  }
+
+  .project-card .phone-shot,
+  .wide-shot {
+    max-height: 250px;
+  }
+
+  .workflow-proof .wide-shot {
+    max-height: 150px;
+  }
+
+  .image-card {
+    padding: 10px;
+  }
+
+  .screenshot-grid,
+  .screenshot-grid.three,
+  .screenshot-grid.phone-three {
+    gap: 10px;
+  }
+
+  .screenshot-grid .wide-shot {
+    max-height: 200px;
+  }
+
+  .phone-card .phone-shot,
+  .screenshot-grid .phone-shot {
+    max-height: 360px;
+  }
+
+  .mode-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .mode-list span {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .compact-metrics .metric-value {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1101px) and (max-height: 760px) {
+  .slide[data-title="技术底座"] {
+    padding-top: 46px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .project-grid,
+  .screenshot-grid.three,
+  .screenshot-grid.phone-three,
+  .screenshot-grid.phone-two {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-height: 0;
+  }
+
+  .agent-pipeline {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .stage:nth-child(3)::after {
+    display: none;
+  }
+
+  .compact-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 840px), (max-height: 660px) {
+  .slide[data-title="技术底座"] {
+    padding-top: 42px;
+    gap: 10px;
+  }
+
+  .agent-pipeline {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stage:nth-child(3)::after {
+    display: block;
+  }
+
+  .stage:nth-child(2)::after,
+  .stage:nth-child(4)::after {
+    display: none;
+  }
+
+  .mode-list {
+    grid-template-columns: 1fr;
+  }
+
+  .compact-metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small layout fixes: keep cover actions clear and center the two-phone showcase. */
+.language-switch {
+  top: 72px;
+  left: 48px;
+  right: auto;
+}
+
+.print-version-link {
+  top: 72px;
+  right: 48px;
+}
+
+@media (max-width: 1040px), (max-height: 720px) {
+  .language-switch {
+    top: 56px;
+    left: 32px;
+  }
+
+  .print-version-link {
+    top: 56px;
+    right: 32px;
+  }
+}
+
+@media (max-width: 720px) {
+  .language-switch {
+    top: 52px;
+    left: 22px;
+  }
+
+  .print-version-link {
+    top: 88px;
+    left: 22px;
+    right: auto;
+  }
+}
+
+.zoomable-image {
+  cursor: zoom-in;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.zoomable-image:hover,
+.zoomable-image:focus-visible {
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.zoomable-card {
+  position: relative;
+}
+
+.zoomable-card::after {
+  content: "点击放大";
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  z-index: 3;
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  color: #0f2348;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 800;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+html[lang="en"] .zoomable-card::after {
+  content: "Click to enlarge";
+}
+
+.zoomable-card:hover::after,
+.zoomable-card:focus-within::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.media-lightbox-panel {
+  width: min(1400px, 96vw);
+  max-height: 94vh;
+}
+
+.media-lightbox-img {
+  max-width: min(96vw, 1400px);
+  max-height: 86vh;
+  object-fit: contain;
+}
+
+/* Stable page-specific fix for FamilyCare interaction screenshots. */
+.familycare-interaction-slide {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.familycare-interaction-slide .stack {
+  margin-bottom: 20px;
+}
+
+.familycare-interaction-slide .screenshot-grid.phone-two {
+  display: grid;
+  grid-template-columns: repeat(2, 340px);
+  justify-content: center;
+  align-items: start;
+  gap: 36px;
+  width: min(760px, 100%);
+  margin: 20px auto 0;
+}
+
+.familycare-interaction-slide .phone-card {
+  width: 340px;
+  padding: 14px 14px 12px;
+  box-sizing: border-box;
+}
+
+.familycare-interaction-slide .phone-shot {
+  display: block;
+  width: 100%;
+  max-height: 380px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.familycare-interaction-slide figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+@media (max-width: 900px) {
+  .familycare-interaction-slide {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+
+  .familycare-interaction-slide .screenshot-grid.phone-two {
+    grid-template-columns: 320px;
+    gap: 24px;
+    width: min(340px, 100%);
+  }
+
+  .familycare-interaction-slide .phone-card {
+    width: 320px;
+  }
+
+  .familycare-interaction-slide .phone-shot {
+    max-height: 360px;
   }
 }

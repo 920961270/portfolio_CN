@@ -6,6 +6,19 @@
 
 直接用浏览器打开 `index.html`。
 
+## PDF 导出
+
+To export PDF:
+
+1. Open `print.html`
+2. Press Ctrl + P
+3. Destination: Save as PDF
+4. Layout: Landscape
+5. Margins: None
+6. Enable Background graphics
+7. Disable Headers and footers
+8. Save as `陈陆琪_项目作品集_CV_RAG_LLM.pdf`
+
 ## GitHub Pages 部署
 
 1. 将本目录作为仓库内容推送到 GitHub。
