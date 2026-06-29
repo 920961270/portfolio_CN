@@ -1324,3 +1324,532 @@ html[lang="en"] .zoomable-card::after {
     max-height: 360px;
   }
 }
+
+/* Portfolio expansion: automation workflow, AI-native skill, and four-project overview. */
+.cover-panel .title {
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.portfolio-four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.portfolio-four .project-card {
+  min-height: 0;
+  gap: 12px;
+  padding: 16px;
+}
+
+.portfolio-four .project-copy {
+  gap: 8px;
+}
+
+.portfolio-four h3 {
+  font-size: 20px;
+}
+
+.portfolio-four p {
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.portfolio-four .wide-shot,
+.portfolio-four .phone-shot {
+  max-height: 190px;
+}
+
+.slide[data-title="VSRNet 技术底座"] {
+  justify-content: flex-start;
+  padding-top: 54px;
+}
+
+.slide[data-title="VSRNet 技术底座"] .stack {
+  gap: 8px;
+}
+
+.automation-flow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px 24px;
+  align-items: stretch;
+}
+
+.flow-step {
+  position: relative;
+  min-height: 88px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border-strong);
+  border-top: 4px solid var(--accent-3);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text-1);
+  padding: 12px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.flow-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  width: 14px;
+  height: 2px;
+  background: var(--border-strong);
+}
+
+.flow-step:nth-child(4)::after {
+  display: none;
+}
+
+.dify-canvas-card {
+  max-width: 980px;
+  justify-self: center;
+  margin: 0 auto;
+}
+
+.dify-canvas-shot {
+  max-height: 260px;
+  object-fit: contain;
+}
+
+.log-layout {
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: start;
+}
+
+.log-table {
+  font-size: 13px;
+}
+
+.log-table th,
+.log-table td {
+  padding: 8px 10px;
+}
+
+.log-shot {
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.skill-diagram-card {
+  width: min(1160px, 100%);
+  justify-self: center;
+  margin: 0 auto;
+}
+
+.skill-diagram-shot {
+  width: 100%;
+  max-width: 100%;
+  max-height: 620px;
+  object-fit: contain;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #eef3f8;
+}
+
+.compact-family {
+  gap: 12px;
+}
+
+.compact-family .phone-shot {
+  max-height: 360px;
+}
+
+.compact-family figcaption {
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.comparison-table td:first-child {
+  width: 26%;
+}
+
+@media (max-width: 1180px), (max-height: 760px) {
+  .cover-panel .title {
+    font-size: 34px;
+  }
+
+  .portfolio-four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .portfolio-four .wide-shot,
+  .portfolio-four .phone-shot {
+    max-height: 150px;
+  }
+
+  .flow-step {
+    min-height: 72px;
+    font-size: 13px;
+  }
+
+  .dify-canvas-shot {
+    max-height: 190px;
+  }
+
+  .skill-diagram-shot {
+    max-height: 500px;
+  }
+
+  .compact-family .phone-shot {
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio-four,
+  .automation-flow,
+  .log-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-step:not(:last-child)::after {
+    display: none;
+  }
+
+  .skill-diagram-shot {
+    max-height: 520px;
+  }
+}
+
+/* Local visual fixes requested for overview, Dify section, and Skill workflow pages. */
+.portfolio-overview-slide {
+  padding-top: 82px;
+  padding-bottom: 96px;
+}
+
+.portfolio-overview-slide .title {
+  max-width: 1180px;
+  font-size: clamp(30px, 3.2vw, 46px);
+  line-height: 1.08;
+}
+
+.portfolio-overview-slide .project-grid {
+  margin: 20px auto 0;
+}
+
+.portfolio-overview-slide .portfolio-four {
+  width: min(1040px, 100%);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.portfolio-overview-slide .project-card {
+  min-height: 150px;
+  grid-template-columns: minmax(0, 1fr) 160px;
+  grid-template-rows: none;
+  align-items: center;
+  padding: 14px;
+}
+
+.portfolio-overview-slide .project-shot,
+.portfolio-overview-slide .wide-shot,
+.portfolio-overview-slide .phone-shot {
+  max-height: 128px;
+}
+
+.project-divider-slide {
+  padding-top: 76px;
+  padding-bottom: 94px;
+}
+
+.divider-layout {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.divider-main .title {
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 1.05;
+}
+
+.project-pill {
+  width: fit-content;
+  border: 1px solid rgba(29, 78, 216, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--accent);
+  padding: 8px 13px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.divider-signals {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.divider-signals .signal {
+  min-height: 108px;
+}
+
+.divider-problem {
+  margin-top: 18px;
+}
+
+.divider-problem .card {
+  padding: 16px;
+}
+
+.divider-problem p {
+  color: var(--text-2);
+  font-size: 16px;
+}
+
+.dify-workflow-slide {
+  padding-top: 66px;
+  padding-bottom: 94px;
+  gap: 16px;
+}
+
+.workflow-chain {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 22px minmax(0, 1fr) 22px minmax(0, 1fr) 22px minmax(0, 1fr);
+  gap: 10px;
+  align-items: stretch;
+}
+
+.workflow-node {
+  min-height: 102px;
+  display: grid;
+  align-content: start;
+  gap: 6px;
+  border: 1px solid var(--border-strong);
+  border-top: 4px solid var(--accent-3);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.92);
+  padding: 12px;
+}
+
+.workflow-node span {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent-3);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.workflow-node h3 {
+  font-size: 15px;
+  line-height: 1.16;
+}
+
+.workflow-node p {
+  color: var(--text-2);
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.workflow-arrow {
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.workflow-turn {
+  grid-column: 1 / -1;
+  justify-self: end;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--text-3);
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.dify-workflow-slide .dify-canvas-card {
+  margin-top: 0;
+}
+
+.dify-workflow-slide .dify-canvas-shot {
+  max-height: 220px;
+}
+
+.skill-workflow-slide {
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+
+.skill-workflow-slide .skill-diagram-card {
+  width: min(1180px, 92%);
+  margin: 18px auto 0;
+  padding: 14px;
+}
+
+.skill-workflow-slide .skill-diagram-card img {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.skill-workflow-slide figcaption {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+@media (max-height: 760px) {
+  .portfolio-overview-slide {
+    padding-top: 72px;
+    padding-bottom: 88px;
+  }
+
+  .portfolio-overview-slide .project-card {
+    min-height: 132px;
+  }
+
+  .portfolio-overview-slide .project-shot,
+  .portfolio-overview-slide .wide-shot,
+  .portfolio-overview-slide .phone-shot {
+    max-height: 106px;
+  }
+
+  .project-divider-slide {
+    padding-top: 66px;
+    padding-bottom: 86px;
+  }
+
+  .divider-main .title {
+    font-size: 38px;
+  }
+
+  .divider-signals .signal {
+    min-height: 88px;
+    padding: 12px;
+  }
+
+  .dify-workflow-slide {
+    padding-top: 58px;
+    padding-bottom: 86px;
+    gap: 12px;
+  }
+
+  .workflow-node {
+    min-height: 86px;
+    padding: 10px;
+  }
+
+  .workflow-node h3 {
+    font-size: 13px;
+  }
+
+  .workflow-node p {
+    font-size: 11px;
+  }
+
+  .dify-workflow-slide .dify-canvas-shot {
+    max-height: 160px;
+  }
+
+  .skill-workflow-slide .skill-diagram-card img {
+    max-height: 460px;
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio-overview-slide .portfolio-four,
+  .divider-layout,
+  .divider-signals {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-overview-slide .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-chain {
+    grid-template-columns: 1fr;
+  }
+
+  .workflow-arrow,
+  .workflow-turn {
+    display: none;
+  }
+}
+
+/* Final local layout tune: calmer overview title and safer Skill diagram height. */
+.portfolio-overview-slide {
+  padding-top: 88px;
+}
+
+.portfolio-overview-slide .title {
+  max-width: 1100px;
+  font-size: clamp(28px, 2.7vw, 40px);
+  line-height: 1.12;
+}
+
+.portfolio-overview-slide .project-grid {
+  width: min(1220px, 92%);
+  margin: 28px auto 0;
+  gap: 20px 24px;
+}
+
+.portfolio-overview-slide .project-card {
+  min-height: 150px;
+  padding: 20px 24px;
+}
+
+.portfolio-overview-slide .project-shot,
+.portfolio-overview-slide .wide-shot,
+.portfolio-overview-slide .phone-shot {
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.skill-workflow-slide {
+  padding-top: 76px;
+  padding-bottom: 120px;
+}
+
+.skill-workflow-slide .stack {
+  margin-bottom: 12px;
+}
+
+.skill-workflow-slide .title {
+  font-size: clamp(30px, 3vw, 42px);
+  line-height: 1.1;
+}
+
+.skill-workflow-slide .skill-diagram-card {
+  width: min(1040px, 88%);
+  margin: 14px auto 0;
+  padding: 12px;
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.skill-workflow-slide .skill-diagram-card img {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  object-position: center top;
+  margin: 0 auto;
+}
+
+.skill-workflow-slide figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.35;
+}
